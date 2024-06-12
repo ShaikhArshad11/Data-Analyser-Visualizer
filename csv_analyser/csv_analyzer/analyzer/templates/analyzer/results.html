@@ -1,0 +1,13 @@
+<h1>CSV Analysis Results</h1>
+
+<h2>First few rows of the data</h2>
+{{ head|safe }}
+
+<h2>Summary Statistics</h2>
+{{ summary_stats|safe }}
+
+<h2>Missing Values</h2>
+{{ missing_values|safe }}
+
+<h2>Plot</h2>
+<img src="{% media 'histogram.png' %}" alt="Histogram">
